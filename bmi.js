@@ -3,8 +3,8 @@
 
 console.log("Enter weight and height");
 function bmiCalculator(weight, height){
-    var BMI=weight/(height*height);
-    return Math.floor(BMI);
+    var BMI=weight/Math.pow(height,2);
+    return Math.round(BMI);
 }
 
 var bmi=bmiCalculator(65, 1.8);
